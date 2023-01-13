@@ -138,6 +138,38 @@ a {
     align-items: center;
 }
 
+.btn {
+    padding: 10px 32px;
+    color: rgb(92, 91, 91);
+    border-radius: 30px;
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    line-height: 41px;
+}
+
+.btn-outline {
+    border: 2px solid black;
+    font-weight: 500;
+}
+
+.btn-play {
+    align-items: center;
+}
+
+#play-btn {
+    width: 40px;
+    height: 40px;
+    margin: 0 1em;
+}
+
+.m2 {
+    padding: 4em 0 2em;
+}
+
 /* Global styles end */
 
 /* Main styles */
@@ -148,7 +180,43 @@ a {
 
 nav a {
     margin: 0 1em;
-    
+    color: black;
 }
 
+.hero {
+    background: linear-gradient(rgb(89, 215, 247), rgb(215, 141, 245));
+}
+
+.hero-copy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.hero-copy h4 {
+    display: flex;
+    align-items: center;
+}
+
+.hero-copy hr {
+    width: 20px;
+    margin-right: 0.3em;
+    margin-left: 0;
+    height: 4px;
+    background-color: #333;
+}
+
+.image {
+    height: 700px;
+    width: 700px;
+    -webkit-mask-image: url(/assets/blob.svg);
+    mask-image: url(/assets/blob.svg);
+}
+
+.image-mask {
+    background: url(/assets/wave.jpg);
+    background-size: cover;
+}
 /* Main styles end*/
