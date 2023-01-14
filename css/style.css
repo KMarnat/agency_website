@@ -183,6 +183,10 @@ a {
   padding: 4em 0 2em;
 }
 
+.margin-za {
+  margin: 0 auto;
+}
+
 .bg-logo {
   font-family: "Trebuchet MS", Arial, sans-serif;
   position: absolute;
@@ -202,8 +206,11 @@ a {
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
+  margin-right: 1em;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .portrait-image {
@@ -211,6 +218,12 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+}
+
 /* Global styles end */
 
 /* Main styles */
@@ -229,7 +242,7 @@ nav a {
 }
 
 .hero {
-  background: linear-gradient(rgb(89, 215, 247), rgb(215, 141, 245));
+  background: linear-gradient(90deg, rgb(229, 234, 234), rgb(229, 234, 234), rgb(227, 198, 209));
 }
 
 .hero-copy {
@@ -273,6 +286,35 @@ nav a {
 .hero-image-container {
   position: relative;
   display: inline-flex;
+}
+
+.hero-footer > div {
+  width: 400px;
+  height: 220px;
+}
+
+.hero-footer h1,
+.hero-footer h2,
+.hero-footer h3,
+.hero-footer h4,
+.hero-footer h5 {
+  margin: 0.5rem 0;
+}
+
+.hf-box {
+  border: 2px solid white;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.hf-box p {
+  margin: 0;
 }
 
 /* Main styles end*/
