@@ -198,6 +198,19 @@ a {
   isolation: isolate;
 }
 
+.portrait-wrapper {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+}
+
+.portrait-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Global styles end */
 
 /* Main styles */
