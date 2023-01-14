@@ -22,8 +22,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -62,9 +62,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -79,21 +79,29 @@ select {
 
 /* Typography */
 
-html {font-size: 100%;} /*16px*/
+html {
+  font-size: 100%;
+} /*16px*/
 
 body {
   background: white;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 400;
   line-height: 1.75;
   color: #000000;
 }
 
-p {margin-bottom: 1rem;}
+p {
+  margin-bottom: 1rem;
+}
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 3rem 0 1.38rem;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -103,71 +111,91 @@ h1 {
   font-size: 5.653rem;
 }
 
-h2 {font-size: 3.998rem;}
+h2 {
+  font-size: 3.998rem;
+}
 
-h3 {font-size: 2.827rem;}
+h3 {
+  font-size: 2.827rem;
+}
 
-h4 {font-size: 1.999rem;}
+h4 {
+  font-size: 1.999rem;
+}
 
-h5 {font-size: 1.414rem;}
+h5 {
+  font-size: 1.414rem;
+}
 
-small, .text_small {font-size: 0.707rem;}
+small,
+.text_small {
+  font-size: 0.707rem;
+}
 
 /* Typography end */
 
 /* Global styles */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .wrapper {
-    max-width: 1400px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .x-bw {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .y-c {
-    align-items: center;
+  align-items: center;
 }
 
 .btn {
-    padding: 10px 32px;
-    color: rgb(92, 91, 91);
-    border-radius: 30px;
+  padding: 3px 32px;
+  color: rgb(92, 91, 91);
+  border-radius: 30px;
 }
 
 .btn-primary {
-    background-color: black;
-    color: white;
-    font-weight: 500;
-    line-height: 41px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  line-height: 41px;
 }
 
 .btn-outline {
-    border: 2px solid black;
-    font-weight: 500;
+  border: 2px solid black;
+  font-weight: 500;
 }
 
 .btn-play {
-    align-items: center;
-}
-
-#play-btn {
-    width: 40px;
-    height: 40px;
-    margin: 0 1em;
+  align-items: center;
 }
 
 .m2 {
-    padding: 4em 0 2em;
+  padding: 4em 0 2em;
+}
+
+.bg-logo {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  position: absolute;
+  top: 48%;
+  left: -9%;
+  font-weight: 700;
+  font-size: 17em;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+}
+
+.isolate {
+  isolation: isolate;
 }
 
 /* Global styles end */
@@ -175,48 +203,63 @@ a {
 /* Main styles */
 
 #logo {
-    margin: 0;
+  margin: 0;
+}
+
+#play-btn {
+  margin: 0 1em 0 0;
 }
 
 nav a {
-    margin: 0 1em;
-    color: black;
+  margin: 0 1em;
+  color: black;
 }
 
 .hero {
-    background: linear-gradient(rgb(89, 215, 247), rgb(215, 141, 245));
+  background: linear-gradient(rgb(89, 215, 247), rgb(215, 141, 245));
 }
 
 .hero-copy {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .hero-copy h4 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .hero-copy hr {
-    width: 20px;
-    margin-right: 0.3em;
-    margin-left: 0;
-    height: 4px;
-    background-color: #333;
+  width: 20px;
+  margin-right: 0.3em;
+  margin-left: 0;
+  height: 4px;
+  background-color: #333;
+  border: none;
 }
 
 .image {
-    height: 700px;
-    width: 700px;
-    -webkit-mask-image: url(/assets/blob.svg);
-    mask-image: url(/assets/blob.svg);
+  height: 700px;
+  width: 700px;
+  -webkit-mask-image: url(/assets/blob.svg);
+  mask-image: url(/assets/blob.svg);
 }
 
 .image-mask {
-    background: url(/assets/wave.jpg);
-    background-size: cover;
+  background: url(/assets/wave.jpg);
+  background-size: cover;
 }
+
+.btn-group a:last-child {
+  margin-left: 1em;
+}
+
+.hero-image-container {
+  position: relative;
+  display: inline-flex;
+}
+
 /* Main styles end*/
