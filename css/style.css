@@ -231,7 +231,10 @@ nav a {
 }
 
 .hero {
-  background: linear-gradient(90deg, rgb(229, 234, 234), rgb(229, 234, 234), rgb(227, 198, 209));
+  background: rgb(227, 198, 209);
+  background: -webkit-radial-gradient(right, rgb(227, 198, 209), rgb(225, 230, 230));
+  background: -moz-radial-gradient(right, rgb(227, 198, 209), rgb(225, 230, 230));
+  background: radial-gradient(to left, rgb(227, 198, 209), rgb(225, 230, 230));
 }
 
 .hero-copy {
@@ -264,8 +267,10 @@ nav a {
 }
 
 .image-mask {
-  background: url(/assets/wave.jpg);
-  background-size: cover;
+  background: url(/assets/heroimage.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  z-index: 1;
 }
 
 .mask-bordered {
@@ -290,6 +295,13 @@ nav a {
   font-size: 17em;
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: transparent;
+}
+.logo-colored {
+  -webkit-text-stroke: 1px rgb(255, 178, 90);
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-logo2 {
 }
 
 .btn-group a:last-child {
