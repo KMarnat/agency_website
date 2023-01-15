@@ -187,17 +187,6 @@ a {
   margin: 0 auto;
 }
 
-.bg-logo {
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  position: absolute;
-  top: 48%;
-  left: -9%;
-  font-weight: 700;
-  font-size: 17em;
-  -webkit-text-stroke: 1px white;
-  -webkit-text-fill-color: transparent;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -270,13 +259,37 @@ nav a {
 .image {
   height: 700px;
   width: 700px;
-  -webkit-mask-image: url(/assets/blob.svg);
-  mask-image: url(/assets/blob.svg);
+  -webkit-mask-image: url(/assets/blob-fill.svg);
+  mask-image: url(/assets/blob-fill.svg);
 }
 
 .image-mask {
   background: url(/assets/wave.jpg);
   background-size: cover;
+}
+
+.mask-bordered {
+  height: 770px;
+  width: 770px;
+  top: -5%;
+  left: -5%;
+  position: absolute;
+  background: black;
+  background-size: cover;
+  -webkit-mask-image: url(/assets/blob-no-fill.svg);
+  mask-image: url(/assets/blob-no-fill.svg);
+  stroke-width: 0.1;
+}
+
+.bg-logo {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  position: absolute;
+  top: 48%;
+  left: -9%;
+  font-weight: 700;
+  font-size: 17em;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn-group a:last-child {
@@ -286,6 +299,16 @@ nav a {
 .hero-image-container {
   position: relative;
   display: inline-flex;
+}
+
+.black-dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: 85%;
+  left: 80%;
 }
 
 .hero-footer > div {
