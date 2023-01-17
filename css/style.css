@@ -93,6 +93,7 @@ body {
 
 p {
   margin-bottom: 1rem;
+  font-size: 1.3em;
 }
 
 h1,
@@ -260,13 +261,14 @@ nav a {
 .hero-copy h4 {
   display: flex;
   align-items: center;
+  font-weight: 400;
 }
 
 .hero-copy hr {
-  width: 20px;
+  width: 60px;
   margin-right: 0.3em;
   margin-left: 0;
-  height: 4px;
+  height: 2px;
   background-color: #333;
   border: none;
 }
@@ -357,7 +359,7 @@ nav a {
 .hf-box {
   border: 2px solid white;
   background-color: #ebebeb;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 0 20px;
   margin: auto 0;
   display: flex;
@@ -421,16 +423,28 @@ nav a {
   flex-direction: column;
 }
 
-.grid-box {
-  align-items: center;
-}
-
-.grid-box h4 {
-  margin-left: 10px;
-}
-
 .item-4 {
   background-color: lightskyblue;
 }
 
+.box {
+  flex-wrap: wrap;
+  min-width: 200px;
+}
+
+.box-one {
+}
+
+.box-two {
+  height: 400px;
+}
+
+.box-three {
+  width: 500px;
+  height: 200px;
+}
+
+.circle-image {
+  margin: 10px;
+}
 /* Main styles end*/
