@@ -189,7 +189,8 @@ a {
 }
 
 .m3 {
-  padding: 5em 0 4em;
+  padding-top: 4em;
+  position: relative;
 }
 
 .margin-za {
@@ -423,12 +424,34 @@ nav a {
   flex-direction: column;
 }
 
+.purp-circ {
+  width: 130px;
+  height: 130px;
+  top: 45%;
+  left: 55%;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(233, 145, 253);
+}
+
+.box h5 {
+  margin: 0.5rem 0;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+.margin-para {
+  margin-top: 20px !important;
+}
+
 .two-two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .two-two h4 {
@@ -444,5 +467,31 @@ nav a {
   height: 2px;
   background-color: #333;
   border: none;
+}
+
+.box {
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.box-one {
+  width: 250px;
+  margin-top: 10%;
+  margin-left: 8%;
+}
+
+.box-two {
+  width: 350px;
+  height: 400px;
+}
+
+.flx-end {
+  justify-content: flex-end;
+  align-self: start;
+}
+
+.box-three {
+  width: 550px;
+  height: 250px;
 }
 /* Main styles end*/
