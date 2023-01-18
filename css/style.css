@@ -423,28 +423,26 @@ nav a {
   flex-direction: column;
 }
 
-.item-4 {
-  background-color: lightskyblue;
+.two-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
-.box {
-  flex-wrap: wrap;
-  min-width: 200px;
+.two-two h4 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
 }
 
-.box-one {
-}
-
-.box-two {
-  height: 400px;
-}
-
-.box-three {
-  width: 500px;
-  height: 200px;
-}
-
-.circle-image {
-  margin: 10px;
+.two-two hr {
+  width: 60px;
+  margin-right: 0.3em;
+  margin-left: 0;
+  height: 2px;
+  background-color: #333;
+  border: none;
 }
 /* Main styles end*/
