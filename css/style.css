@@ -533,4 +533,26 @@ nav a {
 .test-box {
   width: 400px;
 }
-/* Main styles end*/
+
+footer {
+  background: rgb(235, 235, 235);
+}
+
+.partner img {
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.sub-input {
+  height: 51px;
+  width: 250px;
+  border-radius: 30px;
+  padding-left: 10px;
+  border: none;
+}
+
+.footer-terms {
+  padding: 1em;
+  border-top: 1px solid rgb(186, 186, 186);
+}
+/* Main styles end*/ ;
