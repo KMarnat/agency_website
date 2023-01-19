@@ -145,6 +145,10 @@ a {
   display: flex;
 }
 
+.in-flex {
+  display: inline-flex;
+}
+
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -190,6 +194,7 @@ a {
 
 .m3 {
   padding-top: 4em;
+
   position: relative;
 }
 
@@ -224,7 +229,7 @@ a {
 }
 
 .gray-bg {
-  background: #e4e3e3;
+  background: #e7e4e4;
 }
 
 /* Global styles end */
@@ -493,5 +498,39 @@ nav a {
 .box-three {
   width: 550px;
   height: 250px;
+}
+
+.client-test {
+  margin-top: 50px !important;
+}
+
+.testimonials {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonials h4 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.testimonials hr {
+  width: 60px;
+  margin-right: 0.3em;
+  margin-left: 0;
+  height: 2px;
+  background-color: #333;
+  border: none;
+}
+
+.testimonial-boxes {
+  margin-top: 5em;
+  gap: 40px;
+}
+
+.test-box {
+  width: 400px;
 }
 /* Main styles end*/
